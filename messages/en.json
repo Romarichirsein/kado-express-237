@@ -1,0 +1,59 @@
+{
+    "nav": {
+        "home": "Home",
+        "shop": "Shop",
+        "packs": "Packs",
+        "builder": "Builder",
+        "cart": "Cart",
+        "faq": "FAQ",
+        "contact": "Contact"
+    },
+    "common": {
+        "theme": "Theme",
+        "light": "Light",
+        "dark": "Dark",
+        "language": "Language",
+        "region": "Region",
+        "currency": "Currency",
+        "search": "Search",
+        "filters": "Filters",
+        "close": "Close",
+        "continue": "Continue",
+        "back": "Back"
+    },
+    "cta": {
+        "viewPacks": "View Packs",
+        "buildPack": "Build my pack",
+        "shopNow": "Shop Now",
+        "addToCart": "Add to Cart",
+        "goToCart": "Go to Cart",
+        "orderWhatsapp": "Order on WhatsApp"
+    },
+    "delivery": {
+        "digital": "Digital Delivery via WhatsApp",
+        "physical": "Physical Delivery (Yaoundé)",
+        "fee": "Delivery Fee (Yaoundé)",
+        "orderAhead": "Order 2 days in advance"
+    },
+    "form": {
+        "title": "Order Details",
+        "clientName": "Your Name",
+        "recipientName": "Recipient Name",
+        "whatsappPhone": "WhatsApp Number",
+        "addressYaounde": "Delivery Address (Yaoundé)",
+        "desiredDate": "Desired Date",
+        "message": "Message to include",
+        "voice": "Voice Choice",
+        "voiceMale": "Male",
+        "voiceFemale": "Female",
+        "language": "Content Language",
+        "filesNote": "Files (Photos/Videos)",
+        "filesHint": "You can send files on WhatsApp after ordering.",
+        "submit": "Open WhatsApp & Send"
+    },
+    "errors": {
+        "required": "Required field",
+        "dateTooSoon": "Date must be at least 2 days from now.",
+        "physicalOnlyCM": "Physical products are only available in Cameroon (Yaoundé)."
+    }
+}

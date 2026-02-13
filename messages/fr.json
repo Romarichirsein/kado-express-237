@@ -1,0 +1,59 @@
+{
+    "nav": {
+        "home": "Accueil",
+        "shop": "Boutique",
+        "packs": "Packs",
+        "builder": "Personnaliser",
+        "cart": "Panier",
+        "faq": "FAQ",
+        "contact": "Contact"
+    },
+    "common": {
+        "theme": "Thème",
+        "light": "Clair",
+        "dark": "Sombre",
+        "language": "Langue",
+        "region": "Région",
+        "currency": "Devise",
+        "search": "Rechercher",
+        "filters": "Filtres",
+        "close": "Fermer",
+        "continue": "Continuer",
+        "back": "Retour"
+    },
+    "cta": {
+        "viewPacks": "Voir les packs",
+        "buildPack": "Composer mon pack",
+        "shopNow": "Voir la boutique",
+        "addToCart": "Ajouter au panier",
+        "goToCart": "Aller au panier",
+        "orderWhatsapp": "Commander sur WhatsApp"
+    },
+    "delivery": {
+        "digital": "Livraison digitale via WhatsApp",
+        "physical": "Livraison physique à Yaoundé",
+        "fee": "Frais de livraison Yaoundé",
+        "orderAhead": "Commande 2 jours à l’avance"
+    },
+    "form": {
+        "title": "Informations de commande",
+        "clientName": "Nom & prénom (client)",
+        "recipientName": "Nom & prénom (destinataire)",
+        "whatsappPhone": "Téléphone WhatsApp",
+        "addressYaounde": "Adresse de livraison (Yaoundé) — quartier, repère…",
+        "desiredDate": "Date souhaitée",
+        "message": "Message à intégrer",
+        "voice": "Choix de voix (si audio)",
+        "voiceMale": "Masculine",
+        "voiceFemale": "Féminine",
+        "language": "Langue du contenu",
+        "filesNote": "Fichiers (photos/vidéos)",
+        "filesHint": "Vous pourrez envoyer les fichiers juste après sur WhatsApp.",
+        "submit": "Ouvrir WhatsApp et envoyer la commande"
+    },
+    "errors": {
+        "required": "Champ obligatoire",
+        "dateTooSoon": "La date doit être au moins dans 2 jours.",
+        "physicalOnlyCM": "Les produits physiques sont disponibles uniquement au Cameroun (livraison Yaoundé)."
+    }
+}

@@ -1,0 +1,145 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius: 0.5rem;
+
+  /* Custom Glows */
+  --color-neon-pink: #FF2BD6;
+  --color-neon-purple: #A855F7;
+}
+
+:root {
+  /* Default Light Theme */
+  --background: #ffffff;
+  --foreground: #140A1E;
+  
+  --card: rgba(20, 10, 30, 0.04);
+  --card-foreground: #140A1E;
+  
+  --popover: #ffffff;
+  --popover-foreground: #140A1E;
+  
+  --primary: #FF2BD6; /* Neon Pink */
+  --primary-foreground: #ffffff;
+  
+  --secondary: #f4f4f5;
+  --secondary-foreground: #18181b;
+  
+  --muted: #f4f4f5;
+  --muted-foreground: #71717a;
+  
+  --accent: #f4f4f5;
+  --accent-foreground: #18181b;
+  
+  --destructive: #ef4444;
+  --destructive-foreground: #fafafa;
+
+  --border: rgba(20, 10, 30, 0.1);
+  --input: rgba(20, 10, 30, 0.1);
+  --ring: #FF2BD6;
+  
+  --radius: 0.5rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Default Dark Theme preferred by system */
+    --background: #06030A;
+    --foreground: #F4F1FF;
+    
+    --card: rgba(255, 255, 255, 0.04);
+    --card-foreground: #F4F1FF;
+    
+    --popover: #06030A;
+    --popover-foreground: #F4F1FF;
+    
+    --primary: #FF2BD6;
+    --primary-foreground: #ffffff;
+    
+    --secondary: rgba(255, 255, 255, 0.1);
+    --secondary-foreground: #F4F1FF;
+    
+    --muted: rgba(244, 241, 255, 0.5);
+    --muted-foreground: rgba(244, 241, 255, 0.72);
+    
+    --accent: rgba(255, 255, 255, 0.05);
+    --accent-foreground: #F4F1FF;
+    
+    --destructive: #FF3B6B;
+    --destructive-foreground: #fafafa;
+    
+    --border: rgba(255, 255, 255, 0.1);
+    --input: rgba(255, 255, 255, 0.1);
+    --ring: #FF2BD6;
+  }
+}
+
+/* Explicit class-based dark mode (for next-themes) */
+.dark {
+  --background: #06030A;
+  --foreground: #F4F1FF;
+  
+  --card: rgba(255, 255, 255, 0.04);
+  --card-foreground: #F4F1FF;
+  
+  --popover: #06030A;
+  --popover-foreground: #F4F1FF;
+  
+  --primary: #FF2BD6;
+  --primary-foreground: #ffffff;
+  
+  --secondary: rgba(255, 255, 255, 0.1);
+  --secondary-foreground: #F4F1FF;
+  
+  --muted: rgba(244, 241, 255, 0.5);
+  --muted-foreground: rgba(244, 241, 255, 0.72);
+  
+  --accent: rgba(255, 255, 255, 0.05);
+  --accent-foreground: #F4F1FF;
+  
+  --destructive: #FF3B6B;
+  --destructive-foreground: #fafafa;
+  
+  --border: rgba(255, 255, 255, 0.1);
+  --input: rgba(255, 255, 255, 0.1);
+  --ring: #FF2BD6;
+}
+
+/* Utility classes for Glassmorphism */
+@layer utilities {
+  .glass {
+    @apply bg-card backdrop-blur-md border border-border;
+  }
+  .glass-hover {
+    @apply transition-all duration-300 hover:bg-accent/10 hover:shadow-[0_0_20px_rgba(255,43,214,0.15)] hover:-translate-y-1;
+  }
+  .text-glow {
+    text-shadow: 0 0 10px rgba(255, 43, 214, 0.5);
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), sans-serif;
+  overflow-x: hidden;
+}
